@@ -1,0 +1,103 @@
+/* Section Title */
+#projects .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff6a00, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#projects .section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff416c, #ffcc00);
+  margin: 0.6rem auto 0;
+  border-radius: 6px;
+}
+
+/* Card Styling */
+.project-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f7f7f7);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title */
+.project-card .card-title {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.project-card .card-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #00c6ff, #007bff);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* Tech Badges */
+.badge-gradient {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff416c, #ff0a68, #ff0095, #757575);
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(255, 65, 108, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge-gradient:hover {
+  transform: scale(1.15) rotate(-3deg);
+  box-shadow: 0 6px 15px rgba(255, 100, 50, 0.5);
+}
+
+/* Buttons */
+.project-card .btn {
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.project-card .btn-dark {
+  background: linear-gradient(135deg, #232526, #414345);
+  border: none;
+}
+
+.project-card .btn-dark:hover {
+  background: linear-gradient(135deg, #414345, #232526);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-card .btn-primary {
+  background: linear-gradient(135deg, #00c6ff, #007bff);
+  border: none;
+}
+
+.project-card .btn-primary:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 91, 187, 0.6);
+}

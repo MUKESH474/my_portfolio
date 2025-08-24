@@ -1,0 +1,134 @@
+/* -------- Resume Section -------- */
+#resume {
+  /* soft gradient background */
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 35%, #fff3ff 100%);
+  color: #222;
+}
+
+/* Section title with rainbow text */
+#resume .section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  background: linear-gradient(90deg, #ff416c, #ff9a00, #00c6ff, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+#resume .section-title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff416c, #ffcc00);
+}
+
+/* -------- Education block -------- */
+#resume h4.fw-bold {
+  font-weight: 800 !important;
+  margin-bottom: 1rem;
+  letter-spacing: .3px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#resume ul {
+  padding-left: 0;
+}
+
+#resume ul li {
+  list-style: none;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.08);
+  position: relative;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+/* colorful left accent */
+#resume ul li::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 14px 0 0 14px;
+  background: linear-gradient(180deg, #ff6a00, #ff2d55, #7a5cff);
+}
+
+#resume ul li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, .12);
+  border-color: rgba(0,0,0,.08);
+}
+
+/* Degree title */
+#resume ul li strong {
+  font-weight: 800;
+  color: #1f1f1f;
+}
+
+/* -------- Download button -------- */
+#resume .btn-primary {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 10px 18px rgba(37, 117, 252, .25);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+#resume .btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 28px rgba(37, 117, 252, .35);
+  filter: brightness(1.02);
+}
+
+/* Optional: constrain button width better on large screens */
+#resume .download-wrap {
+  max-width: 520px;
+}
+
+/* -------- Progress bars (if you add them) -------- */
+#resume .progress {
+  height: 12px;
+  border-radius: 20px;
+  background: #eef2f6;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.06);
+}
+
+#resume .progress-bar {
+  border-radius: 20px;
+  font-size: .75rem;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 8px;
+  color: #fff;
+  background-image: linear-gradient(90deg, #ff7a18, #af002d 70%, #319197);
+  background-size: 200% 100%;
+  animation: barShift 3s linear infinite;
+}
+
+@keyframes barShift {
+  0%   { background-position: 0% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* -------- Responsive tweaks -------- */
+@media (max-width: 767.98px) {
+  #resume .section-title { font-size: 1.9rem; }
+  #resume ul li { padding: 12px 14px; }
+}

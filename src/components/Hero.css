@@ -1,0 +1,107 @@
+/* Hero Section */
+#hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+/* Heading */
+#hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+#hero h1 .text-primary {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+#hero p.lead {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #ddd;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Buttons */
+#hero .btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+#hero .btn-primary {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+}
+
+#hero .btn-primary:hover {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  transform: translateY(-2px);
+}
+
+/* Social Links */
+#hero .fs-4 {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#hero .fs-4:hover {
+  transform: scale(1.3);
+  color: #ff6a00 !important;
+}
+
+/* Skill Badges */
+.badge-gradient {
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.badge-gradient:nth-child(2n) {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.badge-gradient:nth-child(3n) {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.badge-gradient:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

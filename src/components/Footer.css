@@ -1,0 +1,60 @@
+/* Footer Section */
+footer {
+  background: #222; /* dark clean bg */
+  color: #f8f9fa;
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+footer h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+/* Contact details */
+footer strong {
+  font-size: 1.1rem;
+  color: #00bcd4;
+  display: block;
+  margin-bottom: 5px;
+}
+
+footer p {
+  margin: 0;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* Icons */
+footer svg {
+  font-size: 1.2rem;
+  margin-right: 6px;
+  vertical-align: middle;
+  color: #ff9800;
+  transition: color 0.3s ease;
+}
+
+footer svg:hover {
+  color: #4caf50;
+}
+
+/* Resume Button */
+footer .btn-resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  background: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .btn-resume:hover {
+  background: #e68900;
+  transform: translateY(-2px);
+}
